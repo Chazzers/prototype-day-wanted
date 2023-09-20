@@ -1,0 +1,45 @@
+body,
+html {
+	margin: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+@font-face {
+	font-family: 'cheltenham';
+	src: url('/fonts/cheltenham-italic-700.woff2');
+	font-style: italic;
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'cheltenham';
+	src: url('/fonts/cheltenham-normal-400.woff2');
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: 'websans';
+	src: url('/fonts/magsans-normal-700.woff2');
+	font-style: normal;
+	font-weight: bold;
+}
+
+h1 {
+	font-family: 'cheltenham';
+	font-style: italic;
+}
+
+h2 {
+	font-family: 'cheltenham';
+	font-style: normal;
+	font-weight: 400;
+}
+
+label {
+	font-family: 'websans';
+	font-weight: bold;
+}
