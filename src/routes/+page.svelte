@@ -79,11 +79,9 @@
 			<div class="img-container">
 				<img src={currentCriminal.img} alt="" />
 			</div>
-			<p>{currentCriminal.name}</p>
 			<div class="criminal-content">
 				<div>
-					<p>Killed {currentCriminal.kills}</p>
-					<img class="tree" src="/images/tree.png" alt="" />
+					<p>{currentCriminal.name} is killing {currentCriminal.kills} Trees</p>
 				</div>
 			</div>
 			<button
@@ -162,12 +160,19 @@
 	}
 	.highlighted-criminal {
 		position: fixed;
-		width: 80vw;
-		height: 100%;
+		width: 40vw;
+		height: 95vh;
 		padding: 1rem;
-		left: 5vw;
-		top: 0;
+		left: 30vw;
+		top: 2.5vh;
 		background-color: #f1eee9;
+		border: solid black 2px;
+	}
+	.highlighted-criminal .criminal {
+		border: none;
+	}
+	.highlighted-criminal p {
+		margin: 16px 0;
 	}
 	.highlighted-criminal > .criminal > .img-container > img {
 		width: 100%;
